@@ -1,0 +1,5 @@
+# tts-basic/bin/RUNDOWN.txt
+
+Only front end files are stored here.
+Dont push to master branch...
+Either clone or fork it!
