@@ -11,4 +11,4 @@ Development Team:
   - Ryan Wans   | Lead Developer, Project Manager
   - Jack Woods  | Front-End Developer
   
-The project is protected by GNU Gener Purpose License.
+The project is protected by GNU General Public License.
