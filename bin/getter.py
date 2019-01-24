@@ -1,5 +1,7 @@
 # Getter
 
+import os
+
 global login_type
 global return_value
 global username
