@@ -1,1 +1,3 @@
 We are transfering from a python startup to java!
+Also…
+The Java JAR Only works on windows… we are working for mac compatibility!
