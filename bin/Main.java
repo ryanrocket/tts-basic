@@ -25,10 +25,10 @@ public class Main {
 	
 	public static void eval()
 	{
-		String url       = "jdbc:mysql://ttsdata.csqthjwkvpon.us-east-1.rds.amazonaws.com:3306/";
-		String userNAME  = "root";
-		String passWORD  = "root";
-		String dbNAME    = "maindb";
+		String url       = // REMOVED //;
+		String userNAME  = // REMOVED //;
+		String passWORD  = // REMOVED //;
+		String dbNAME    = // REMOVED //;
 		int i = 0;
 		try
 		{
