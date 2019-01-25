@@ -12,6 +12,9 @@ else :
 
 # Start The Shell!
 def go():
-    given = input("tts > ")
+    while True:
+        given = input("tts > ")
+        continue
+
 
 # STOP: ST GO JAVA
