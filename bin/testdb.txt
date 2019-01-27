@@ -1,0 +1,54 @@
++----+---------+-------------+-----------+------------+
+| id | course  | asnm_name   | Ryan Wans | Jack Woods |
++----+---------+-------------+-----------+------------+
+|  1 | algebra | Homework 1  |       100 |        100 |
+|  2 | algebra | Unit Quiz 1 |       100 |        100 |
+|  3 | math8   | Homework 1  |      NULL |       NULL |
+|  4 | math8   | Unit Quiz 1 |      NULL |       NULL |
++----+---------+-------------+-----------+------------+
+
+Half way there. If you think about your model, the data you are trying to store and handle, you have three things or objects. Assignments, Studnets and Scores. Ideally you'll have three tables. But this will make your queries more complicated.
+
+For just learning inserts, selects etc above is fine. And the stuff below may be a little to much atm.
+
+Students
+
+  ID (everything gets an auto inc, primary key id)
+  name
+  
+Assignments
+ 
+   ID
+   course
+   name
+   
+AssignmentScores
+ 
+   assignment_id
+   student_id
+   score
+
+
+Create a student - INSERT INTO Students VALUES('','Matt');
+Create an assignment - INSERT INTO Assignments VALUES('','math8','Unit Quiz 1')
+Score a student - INSERT INTO AssignmentScores VALUES('xx', 'yy', '100')
+
+You'll see in score a student you need the ID number of the assignment and the student before getting thier score. You would do this logic in the code, but there are also neat sql tricks you'll discover.
+
+To query the data you can use JOINS
+
+Get assignment scores - SELECT * FROM Assignments 
+                         LEFT JOIN AssignmentScores ON AssignmentScores.assignment_id = Assignment.id 
+                         LEFT JOIN Students ON Students.id = AssignmentScores.student_id
+                         
+Get a students scores and assignments - SELECT * FROM Students
+                         LEFT JOIN AssignmentScores ON Student.id = AssignmentScores.student_id
+                         LEFT JOIN Assignments ON Assignments.id = AssignmentScores.student_id 
+
+This takes the Assignments table a joins the scores table on the left, turns it into one table really with all the columns.
+
+You could expand your model further with a Courses and Teachers table. 
+
+Hope this helps a bit.
+
+
