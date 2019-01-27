@@ -1,0 +1,8 @@
++----+---------+-------------+-----------+------------+
+| id | course  | asnm_name   | Ryan Wans | Jack Woods |
++----+---------+-------------+-----------+------------+
+|  1 | algebra | Homework 1  |       100 |        100 |
+|  2 | algebra | Unit Quiz 1 |       100 |        100 |
+|  3 | math8   | Homework 1  |      NULL |       NULL |
+|  4 | math8   | Unit Quiz 1 |      NULL |       NULL |
++----+---------+-------------+-----------+------------+
