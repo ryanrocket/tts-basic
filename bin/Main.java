@@ -37,7 +37,7 @@ public class Main {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(url + dbNAME, userNAME, passWORD);
 			Statement state = con.createStatement();
-			String query = "SELECT password FROM credentials WHERE username='" + usr + "'";
+			String query = "SELECT password FROM students WHERE username='" + usr + "'";
 			ResultSet rs = state.executeQuery(query);
 			ResultSetMetaData rsmd = rs.getMetaData();
 			while (rs.next())
