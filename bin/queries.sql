@@ -1,8 +1,8 @@
 -- selects all assignments where name is 'Ryan Wans'
 
-select student.fullname, exam.`exam_name`, grade FROM maindb.grades as main
+select student.fullname, exam.exam_name, grade FROM maindb.grades as main
 inner join students as student on main.stu_id = student.id
-inner join exams as exam on main.`exam_id` = exam.`exam_id`
+inner join exams as exam on main.exam_id = exam.exam_id
 where student.fullname="Ryan Wans";
 
 -- select all assignments under certain course
