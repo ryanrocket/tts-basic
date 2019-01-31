@@ -18,17 +18,17 @@ public class Main {
 	public static boolean status;
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		// Scanner scanner = new Scanner(System.in);
 		
 		eval();
 	}
 	
 	public static void eval()
 	{
-		String url       = // REMOVED //;
-		String userNAME  = // REMOVED //;
-		String passWORD  = // REMOVED //;
-		String dbNAME    = // REMOVED //;
+		String url       = "REMOVED";
+		String userNAME  = "REMOVED";
+		String passWORD  = "REMOVED";
+		String dbNAME    = "REMOVED" ;
 		int i = 0;
 		try
 		{
