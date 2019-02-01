@@ -2,8 +2,11 @@ import os
 import datetime, time
 import sys
 
+# User Teacher
+
 # CMD Get Group
 
-class get:
 
-    #
+# info func
+def info(me):
+    
