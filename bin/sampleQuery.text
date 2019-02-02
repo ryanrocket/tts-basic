@@ -1,6 +1,0 @@
--- Sample Query To Select A Students Grade --
-
-select t1.fullname, grade from maindb.grades as book
-inner join students as t1
-	on book.`stu_id` = t1.`id'
-where t1.`fullname`="Ryan Wans";
