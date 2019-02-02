@@ -25,3 +25,9 @@ where student.fullname="Ryan Wans";
 -- the next query should get the grades from a certain course and average them to one grade
 -- however this should be done client-side in the java method.
 
+-- a better way to select all courses :)
+while rs.next():     -- a result query jdbc thing :)
+	select subjects.subj_title from maindb.stusub as main
+	inner join subjects on main.sub_id = subjects.subj_id
+	inner join students on main.stu_id = students.stu_id
+	where student.stu_id=661888;
